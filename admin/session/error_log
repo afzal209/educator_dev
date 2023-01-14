@@ -1,0 +1,4 @@
+[09-Jan-2020 20:51:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function exist() in /home/c60294tz1zvq/public_html/education/session/session_next.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/c60294tz1zvq/public_html/education/session/session_next.php on line 8

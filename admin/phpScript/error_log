@@ -1,0 +1,51 @@
+[01-Nov-2019 19:00:22 UTC] PHP Notice:  Undefined index: assignacademic in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 23
+[01-Nov-2019 19:00:22 UTC] PHP Notice:  Undefined index: assignsubject in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 24
+[01-Nov-2019 19:11:34 UTC] PHP Notice:  Undefined index: assignacademic in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 23
+[01-Nov-2019 19:11:34 UTC] PHP Notice:  Undefined index: assignsubject in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 24
+[01-Nov-2019 19:21:29 UTC] PHP Notice:  Undefined index: assignacademic in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 23
+[01-Nov-2019 19:21:29 UTC] PHP Notice:  Undefined index: assignsubject in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 24
+[11-Nov-2019 04:37:05 UTC] PHP Warning:  move_uploaded_file(../assets/logo/IMG-20191111-WA0001.jpg): failed to open stream: No such file or directory in /home/c60294tz1zvq/public_html/phpScript/job_ads_script.php on line 29
+[11-Nov-2019 04:37:05 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpTcJnCb' to '../assets/logo/IMG-20191111-WA0001.jpg' in /home/c60294tz1zvq/public_html/phpScript/job_ads_script.php on line 29
+[17-Nov-2019 20:39:43 UTC] PHP Warning:  move_uploaded_file(../assets/ads_pic/IMG-20191109-WA0003.jpg): failed to open stream: No such file or directory in /home/c60294tz1zvq/public_html/phpScript/job_ads_script.php on line 55
+[17-Nov-2019 20:39:43 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpEjmXks' to '../assets/ads_pic/IMG-20191109-WA0003.jpg' in /home/c60294tz1zvq/public_html/phpScript/job_ads_script.php on line 55
+[17-Nov-2019 20:41:46 UTC] PHP Warning:  move_uploaded_file(../assets/ads_pic/20191030_145914-1.jpg): failed to open stream: No such file or directory in /home/c60294tz1zvq/public_html/phpScript/job_ads_script.php on line 55
+[17-Nov-2019 20:41:46 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpEvFUmJ' to '../assets/ads_pic/20191030_145914-1.jpg' in /home/c60294tz1zvq/public_html/phpScript/job_ads_script.php on line 55
+[18-Nov-2019 18:50:49 UTC] PHP Warning:  move_uploaded_file(../assets/ads_pic/Screenshot (106).png): failed to open stream: No such file or directory in /home/c60294tz1zvq/public_html/phpScript/job_ads_script.php on line 55
+[18-Nov-2019 18:50:49 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpcHFwyd' to '../assets/ads_pic/Screenshot (106).png' in /home/c60294tz1zvq/public_html/phpScript/job_ads_script.php on line 55
+[18-Nov-2019 18:51:21 UTC] PHP Warning:  move_uploaded_file(../assets/ads_pic/Screenshot (105).png): failed to open stream: No such file or directory in /home/c60294tz1zvq/public_html/phpScript/job_ads_script.php on line 55
+[18-Nov-2019 18:51:21 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpbmKlHW' to '../assets/ads_pic/Screenshot (105).png' in /home/c60294tz1zvq/public_html/phpScript/job_ads_script.php on line 55
+[18-Nov-2019 18:58:59 UTC] PHP Notice:  Undefined index: image_log in /home/c60294tz1zvq/public_html/phpScript/job_ads_script.php on line 8
+[21-Nov-2019 20:05:05 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting ',' or ')' in /home/c60294tz1zvq/public_html/phpScript/academic_script.php on line 16
+[14-Dec-2019 19:04:43 UTC] PHP Notice:  Undefined index: assignacademic in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 23
+[14-Dec-2019 19:04:43 UTC] PHP Notice:  Undefined index: assignsubject in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 24
+[14-Dec-2019 19:05:40 UTC] PHP Notice:  Undefined index: assignacademic in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 23
+[14-Dec-2019 19:05:40 UTC] PHP Notice:  Undefined index: assignsubject in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 24
+[14-Dec-2019 19:06:01 UTC] PHP Notice:  Undefined index: assignacademic in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 23
+[14-Dec-2019 19:06:01 UTC] PHP Notice:  Undefined index: assignsubject in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 24
+[29-Jan-2020 19:56:52 UTC] PHP Notice:  Undefined index: image in /home/c60294tz1zvq/public_html/phpScript/test_topic_script.php on line 53
+[29-Jan-2020 19:56:52 UTC] PHP Notice:  Undefined index: image in /home/c60294tz1zvq/public_html/phpScript/test_topic_script.php on line 54
+[29-Jan-2020 19:56:52 UTC] PHP Notice:  Undefined index: description in /home/c60294tz1zvq/public_html/phpScript/test_topic_script.php on line 57
+[16-Mar-2020 20:08:47 UTC] PHP Notice:  Undefined index: t_id in /home/c60294tz1zvq/public_html/phpScript/moke_question_script.php on line 45
+[16-Mar-2020 20:08:47 UTC] PHP Notice:  Undefined index: checkbox in /home/c60294tz1zvq/public_html/phpScript/moke_question_script.php on line 46
+[17-Mar-2020 01:08:47 Asia/Karachi] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/c60294tz1zvq/public_html/phpScript/moke_question_script.php on line 53
+[20-Mar-2020 17:18:53 UTC] PHP Warning:  move_uploaded_file(../educator/education/assets/logo/405926_02c8_2.jpg): failed to open stream: No such file or directory in /home/thepakdev/public_html/educator/phpScript/job_ads_script.php on line 17
+[20-Mar-2020 17:18:53 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php9SShHk' to '../educator/education/assets/logo/405926_02c8_2.jpg' in /home/thepakdev/public_html/educator/phpScript/job_ads_script.php on line 17
+[20-Mar-2020 17:20:14 UTC] PHP Warning:  move_uploaded_file(../educator/education/assets/logo/104 - Edit Order ‹ Orders ‹ — WooCommerce.png): failed to open stream: No such file or directory in /home/thepakdev/public_html/educator/phpScript/job_ads_script.php on line 17
+[20-Mar-2020 17:20:14 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpfRbijY' to '../educator/education/assets/logo/104 - Edit Order ‹ Orders ‹ — WooCommerce.png' in /home/thepakdev/public_html/educator/phpScript/job_ads_script.php on line 17
+[24-Mar-2020 20:48:47 UTC] PHP Notice:  Undefined index: assignacademic in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 23
+[24-Mar-2020 20:48:47 UTC] PHP Notice:  Undefined index: assignsubject in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 24
+[24-Mar-2020 20:49:10 UTC] PHP Notice:  Undefined index: assignacademic in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 23
+[24-Mar-2020 20:49:10 UTC] PHP Notice:  Undefined index: assignsubject in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 24
+[24-Mar-2020 20:52:30 UTC] PHP Notice:  Undefined index: assignacademic in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 23
+[24-Mar-2020 20:52:30 UTC] PHP Notice:  Undefined index: assignsubject in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 24
+[24-Mar-2020 20:57:26 UTC] PHP Notice:  Undefined index: assignacademic in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 23
+[24-Mar-2020 20:57:26 UTC] PHP Notice:  Undefined index: assignsubject in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 24
+[24-Mar-2020 21:10:46 UTC] PHP Notice:  Undefined index: assignacademic in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 23
+[24-Mar-2020 21:10:46 UTC] PHP Notice:  Undefined index: assignsubject in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 24
+[24-Mar-2020 21:11:15 UTC] PHP Notice:  Undefined index: assignacademic in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 23
+[24-Mar-2020 21:11:15 UTC] PHP Notice:  Undefined index: assignsubject in /home/c60294tz1zvq/public_html/phpScript/user_script.php on line 24
+[28-Mar-2020 12:29:00 UTC] PHP Notice:  Undefined variable: headers in /home/c60294tz1zvq/public_html/phpScript/admin_script.php on line 23
+[28-Mar-2020 12:33:13 UTC] PHP Notice:  Undefined variable: headers in /home/c60294tz1zvq/public_html/phpScript/admin_script.php on line 23
+[30-Mar-2020 19:54:42 UTC] PHP Notice:  Undefined variable: headers in /home/c60294tz1zvq/public_html/phpScript/admin_script.php on line 23
+[30-Mar-2020 20:03:16 UTC] PHP Notice:  Undefined variable: headers in /home/c60294tz1zvq/public_html/phpScript/admin_script.php on line 23
+[30-Mar-2020 20:12:52 UTC] PHP Notice:  Undefined variable: headers in /home/c60294tz1zvq/public_html/phpScript/admin_script.php on line 23

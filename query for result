@@ -1,0 +1,36 @@
+echo ' 	<h1 class="text-center" style="font-family: "Times New Roman", Times, serif;">Result</h1>
+												<h1 style="font-family: "Times New Roman", Times, serif;">Questions</h1>';
+                                        $query = mysqli_query($con, "SELECT topic.topic_name, question.* 
+												FROM topic
+												RIGHT JOIN question ON topic.id = question.topic_id 
+												where topic_id = '$id'");
+                                        while ($row = mysqli_fetch_assoc($query)) {
+                                            //  echo '<pre>'.print_r($_SESSION  ,true).'<pre>';
+                                            //         //echo '<pre>'.print_r($row,true).'<pre>';
+                                            //echo $row['correct'];
+                                            if (@$row['correct'] == @$_SESSION['quiz']['questions'][$row['id']]) {
+                                                ++$correctCount;
+                                                $r = $row['id'];
+                                            }
+                                            echo '<div class="col-md-12 col-sm-12">
+															<h3 style="margin-left:5%;">'.$a++.'. '.$row['question'].'?</h3>
+														</div>
+														<div>
+															<h3 style="font-family: "Times New Roman", Times, serif;margin-left:8%;">Answers '.$row['correct'].'</h3>
+														</div>';
+                                        }
+                                        echo'	<div  class="col-md-12 col-sm-12 table-responsive" style="margin-top:2%;">
+														<table class="table table-bordered  table-striped">
+															<tr>
+																<th>Total Question</th>
+																<th>Wrong Answer</th>
+																<th>Correct Answer</th>
+															</tr>
+															<tr>
+																<td>'.$totalCount.'</td>
+																<td>'.(int) ($totalCount - $correctCount).'  </td>
+																<td>'.$correctCount.'</td>
+															</tr>
+														</table>
+													</div>
+													<a href="session/paper/session_next.php?id='.$id.'" class="genric-btn primary">Next Topic</a> <a href="session/paper/session_finish.php" class="genric-btn primary-border">Finish</a>';

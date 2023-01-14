@@ -1,0 +1,5 @@
+[13-Jan-2020 07:01:00 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/c60294tz1zvq/public_html/education/session/mokepaper/moke_session_finish.php on line 2
+[15-Jan-2020 08:37:44 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/c60294tz1zvq/public_html/education/session/mokepaper/moke_session_finish.php on line 2
+[15-Jan-2020 08:43:43 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/c60294tz1zvq/public_html/education/session/mokepaper/moke_session_finish.php on line 2
+[12-Mar-2020 22:27:34 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/c60294tz1zvq/public_html/education/session/mokepaper/moke_session_finish.php on line 2
+[12-Mar-2020 22:31:47 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/c60294tz1zvq/public_html/education/session/mokepaper/moke_session_finish.php on line 2

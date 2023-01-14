@@ -1,0 +1,6 @@
+{
+    "require": {
+        "facebook/graph-sdk": "^5.7",
+        "abraham/twitteroauth": "^1.0"
+    }
+}

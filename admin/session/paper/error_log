@@ -1,0 +1,13 @@
+[29-Mar-2020 13:22:40 UTC] PHP Parse error:  syntax error, unexpected ''location:../../academic.php);' (T_ENCAPSED_AND_WHITESPACE) in /home/c60294tz1zvq/public_html/session/paper/session_finish.php on line 6
+[29-Mar-2020 15:01:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function exist() in /home/c60294tz1zvq/public_html/session/paper/session_next.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/c60294tz1zvq/public_html/session/paper/session_next.php on line 8
+[29-Mar-2020 15:03:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function exist() in /home/c60294tz1zvq/public_html/session/paper/session_next.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/c60294tz1zvq/public_html/session/paper/session_next.php on line 8
+[29-Mar-2020 17:53:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function exist() in /home/c60294tz1zvq/public_html/session/paper/session_finish.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/c60294tz1zvq/public_html/session/paper/session_finish.php on line 8
