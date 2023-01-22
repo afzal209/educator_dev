@@ -43,7 +43,7 @@
                                                 </div>';
                                             }
                                 ?>
-                                <form  method="POST" action="phpScript/user_script.php">
+                                <form  method="POST" action="phpScript/user_script.php" >
                                     <div class="mt-10">
                                         <input type="text" name="username" id="username" placeholder="Enter Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Username'" required class="single-input">
                                     </div>
@@ -77,7 +77,7 @@
                                             </select>
                                     </div>
                                     <div class="form-group mt-10">
-                                        <select class="form-control selectpicker" multiple data-live-search="true" name="assignsubject[]" id="assignsubject">
+                                        <select class="form-control select2" multiple data-live-search="true" name="assignsubject[]" id="assignsubject">
                                             <option value=""></option>
                                         </select>                                                
                                     </div>
@@ -93,6 +93,9 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script>
             $(document).ready(function(e){
+                $('.select2').select2({
+                    placeholder: "Nothing Selected",
+                });
                 $('#assignacademic').on('change', function(e){
                     //console.log(e);
                     var aca_id = e.target.value;
@@ -109,7 +112,8 @@
                             //     str +=result[i].value + ',';
                             // }
                             $('#assignsubject').append('<option value = "'+result[i].id+'">'+result[i].subject_name+'</option>');
-                            $('.selectpicker').selectpicker('refresh');    
+                            // $('.selectpicker').selectpicker('refresh');  
+                            $('.select2').select2();  
                         }
                     });
                 });
@@ -127,8 +131,9 @@
                     assignacademic.disabled = true;
                     assignsubject.disabled = true;
                     assignacademic.value = '';
-                    $('.selectpicker option:selected').remove();
-                    $('.selectpicker').selectpicker('refresh');
+                    $('.select2 option').remove();
+                    $('.select2').select2();  
+                    // $('.selectpicker').selectpicker('refresh');
                 }
             }
             </script>

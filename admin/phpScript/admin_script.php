@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
                 //Content
                 $mail->isHTML(true);                                  //Set email format to HTML
                 $mail->Subject = 'Email Verification';
-                $mail->Body    = '<a href="http://localhost/educator_dev/admin/verifyEmail.php?activation_code='.$activation_code.'">Register Account</a>';
+                $mail->Body    = '<a href="http://localhost/dani/educator_dev/admin/verifyEmail.php?activation_code='.$activation_code.'">Register Account</a>';
                 $mail->send();
                 header('location:../login.php?response=success&class=success&message=Check Your email for verification');
 
@@ -48,7 +48,7 @@ if (isset($_POST['submit'])) {
             }
             // $to = $email;
             // $subject = "Email Verification";
-            // $message = "<a href='http://localhost/educator_dev/admin/verifyEmail.php?activation_code=$activation_code'>Register Account</a>";
+            // $message = "<a href='http://localhost/dani/educator_dev/admin/verifyEmail.php?activation_code=$activation_code'>Register Account</a>";
             // $headers = "From: danialjafri88@gmail.com";
             // $headers .= "MIME-Version: 1.0" . "\r\n";
             // $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";

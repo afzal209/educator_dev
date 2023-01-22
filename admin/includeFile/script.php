@@ -13,4 +13,5 @@
 			<script src="assets/js/mail-script.js"></script>	
 			<script src="assets/js/main.js"></script>
 			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-			<script src="bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+			<script src="assets/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>

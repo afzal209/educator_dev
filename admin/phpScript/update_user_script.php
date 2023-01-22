@@ -7,14 +7,32 @@ if (isset($_POST['submit'])) {
     // $assignsubject=$_POST['assignsubject'];
     // $assignacademic=$_POST['assignacademic'];
      $role=$_POST['changerole'];
-    $update = mysqli_query($con, "UPDATE user u set u.username='$username', u.email='$email', u.role = '$role' WHERE u.id ='$id'");
-    if ($update) {
-        header("location:viewuser.php");
-        ob_end_flush();
+    if ($role == 'editor') {
+        # code...
+        $update = mysqli_query($con, "UPDATE user u set u.username='$username', u.email='$email', u.role = '$role' WHERE u.id ='$id'");
+        if ($update) {
+            header("location:viewuser.php");
+            ob_end_flush();
+        }
+        else{
+            echo 'error';
+        }
     }
     else{
-        echo 'error';
+        $delete_permission =  mysqli_query($con,"delete from user_permission where user_id = '$id' ");
+        if ($delete_permission) {
+            $update = mysqli_query($con, "UPDATE user u set u.username='$username', u.email='$email', u.role = '$role' WHERE u.id ='$id'");
+            if ($update) {
+                header("location:viewuser.php");
+                ob_end_flush();
+            }
+            else{
+                echo 'error';
+            }
+        }
+        
     }
+    
     // $deleteCurrentPermissions = "DELETE FROM user_permission WHERE user_id = '$id'";
     // if($assignacademic == ''){
     //     //$update_query=mysqli_query($con,$update);

@@ -50,17 +50,17 @@
                                     <div class="mt-10">
                                         <input type="email" name="email" id="email" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email'" required class="single-input"value="<?php echo $email ?>">
                                     </div>
-                                    <div class="mt-10">
+                                    <!-- <div class="mt-10">
                                         <input type="text" name="" id="" placeholder="" onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required class="single-input" readonly value="<?php echo $role?>">
-                                    </div>
+                                    </div> -->
                                     <div class="form-group mt-10">
                                             <select class="form-control" name="changerole" id="changerole" >
-                                                <option value="" selected>Type</option>
-                                                <option value="subadmin">Sub Admin</option>
-                                                <option value="editor">Editor</option>
-                                                <option value="jobeditor">Job Editor</option>
-                                                <option value="testeditor">Test Editor</option>
-                                                <option value="neweditor">New Editor</option>
+                                                <option value="">Type</option>
+                                                <option value="subadmin"<?php if($role == 'subadmin') echo 'selected="selected"'; ?>>Sub Admin</option>
+                                                <option value="editor"<?php if($role == 'editor') echo 'selected="selected"'; ?>>Editor</option>
+                                                <option value="jobeditor"<?php if($role == 'jobeditor') echo 'selected="selected"'; ?>>Job Editor</option>
+                                                <option value="testeditor"<?php if($role == 'testeditor') echo 'selected="selected"'; ?>>Test Editor</option>
+                                                <option value="neweditor"<?php if($role == 'neweditor') echo 'selected="selected"'; ?>>New Editor</option>
                                             </select>
                                     </div>
                                     <div class="button-group-area mt-40">
