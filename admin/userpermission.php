@@ -43,7 +43,7 @@
                                 <h3 class="mb-30 text-center">Update User Permission</h3>
                                 <form  method="POST" action="">
                                     <div class="form-group mt-10">
-                                        <select class="form-control" name="assignacademic" id="assignacademic" onchange="ck_type()">
+                                        <select class="form-control" name="assignacademic" id="assignacademic" >
                                             <option value=""></option>
                                             <?php
                                                 $query = mysqli_query($con,"select * from academic");
@@ -61,7 +61,7 @@
                                             <input type="text" name="" id="" value="<?php echo $permission_sub?>" readonly class="single-input">
                                         </div>
                                         <div class="form-group mt-10">
-                                            <select class="form-control selectpicker" multiple data-live-search="true" name="assignsubject[]" id="assignsubject">
+                                            <select class="form-control select2" multiple data-live-search="true" name="assignsubject[]" id="assignsubject">
                                                 <option value=""></option>
                                             </select>                                                
                                         </div>
@@ -80,7 +80,12 @@
             <script type="text/javascript">
 
                 $(document).ready(function(e){
+                    $('.select2').select2({
+                        placeholder: "Nothing Selected",
+                    });
 
+                    var permissionArray = "<?= $permissionArray; ?>",
+                    console.log(permissionArray);
                     $('#assignacademic').on('change', function(e){
 
                         //console.log(e);
@@ -112,8 +117,8 @@
                                 // }
 
                                 $('#assignsubject').append('<option value = "'+result[i].id+'">'+result[i].subject_name+'</option>');
-
-                                $('.selectpicker').selectpicker('refresh');    
+                                $('.select2').select2();  
+                                // $('.selectpicker').selectpicker('refresh');    
 
                             }
 

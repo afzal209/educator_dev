@@ -45,13 +45,13 @@
                                 ?>
                                 <form  method="POST" action="phpScript/user_script.php" >
                                     <div class="mt-10">
-                                        <input type="text" name="username" id="username" placeholder="Enter Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Username'" required class="single-input">
+                                        <input type="text" name="username" id="username" placeholder="Enter Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Username'"  class="single-input">
                                     </div>
                                     <div class="mt-10">
-                                        <input type="email" name="email" id="email" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email'" required class="single-input">
+                                        <input type="email" name="email" id="email" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email'"  class="single-input">
                                     </div>
                                     <div class="mt-10">
-                                        <input type="password" name="password" id="password" placeholder="Enter Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Password'" required class="single-input">
+                                        <input type="password" name="password" id="password" placeholder="Enter Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Password'"  class="single-input">
                                     </div>
                                     <div class="form-group mt-10">
                                             <select class="form-control" name="role" id="role" onchange="ck_type()">

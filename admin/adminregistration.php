@@ -28,6 +28,13 @@
                             <div class="col-lg-8 col-md-8">
                                 <h3 class="mb-30 text-center">Admin Registration Form</h3>
                                 <form  method="POST" action="phpScript/admin_script.php">
+                                <?php 
+                                        if(@$_GET['response'] != ''){
+                                            echo '  <div class="alert alert-'.@$_GET['class'].'">
+                                                        <strong>'.ucfirst(@$_GET['response']).'!</strong> '.@$_GET['message'].'
+                                                    </div>';
+                                                }
+                                    ?>
                                     <div class="mt-10">
                                         <input type="text" name="username" placeholder="Enter Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Username'" required class="single-input">
                                     </div>

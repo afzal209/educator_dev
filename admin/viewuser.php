@@ -41,16 +41,40 @@
                                     $query=mysqli_query($con,'select user.*,user_permission.*,subject.*,academic.*,group_concat( subject.subject_name ) as permission_con  from user left join user_permission on user.id = user_permission.user_id LEFT JOIN subject ON subject.id = user_permission.permission_sub LEFT JOIN academic ON academic.id = user_permission.permission where user.id != 1 Group By user.username');
                                     if(mysqli_num_rows($query) > 0){
                                         while($row=mysqli_fetch_assoc($query)){ 
-                                    echo' 
-                                    <div class="table-row">
-                                        <div class="country">'.$row['username'].'</div>
-                                        <div class="country">'.$row['email'].'</div>
-                                        <div class="country">'.$row['academic_name'].'</div>
-                                        <div class="country">'.$row['permission_con'].'</div>
-                                        <div class="country">'.$row['role'].'</div>
-                                        <div class="country"><a href="userpermission.php?id=' .$row['user_id'].'"><i class="fa fa-pencil" aria-hidden="true"></i></a>/<a href="userupdate.php?id='.$row['user_id'].'"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>/<a href="phpDeleteScript/userdelete.php?id='. $row['user_id'].'"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
-                                    </div>
-                                    ';
+                                            if ($row['permission_con'] == null) {
+                                                $query = mysqli_query($con,"select * from user where id != 1");
+                                                    while ($row = mysqli_fetch_assoc($query)) {
+                                                        echo' 
+                                                        <div class="table-row">
+                                                            <div class="country">'.$row['username'].'</div>
+                                                            <div class="country">'.$row['email'].'</div>
+                                                            <div class="country"></div>
+                                                            <div class="country"></div>
+                                                            <div class="country">'.$row['role'].'</div>
+                                                            <div class="country">';
+                                                            if ($row['role'] == 'editor') {
+                                                                echo '<a href="userpermission.php?id=' .$row['id'].'" title="User Permission"><i class="fa fa-pencil" aria-hidden="true"></i></a>/';
+                                                            } 
+                                                            
+                                                            echo '
+                                                            <a href="userupdate.php?id='.$row['id'].'" title="User Edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>/<a href="phpDeleteScript/userdelete.php?id='. $row['id'].'" title="User Delete"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
+                                                        </div>
+                                                        ';
+                                                    }
+                                            }
+                                            else{
+                                                echo' 
+                                                <div class="table-row">
+                                                    <div class="country">'.$row['username'].'</div>
+                                                    <div class="country">'.$row['email'].'</div>
+                                                    <div class="country">'.$row['academic_name'].'</div>
+                                                    <div class="country">'.$row['permission_con'].'</div>
+                                                    <div class="country">'.$row['role'].'</div>
+                                                    <div class="country"><a href="userpermission.php?id=' .$row['user_id'].'" title="User Permission"><i class="fa fa-pencil" aria-hidden="true"></i></a>/<a href="userupdate.php?id='.$row['user_id'].'" title="User Edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>/<a href="phpDeleteScript/userdelete.php?id='. $row['user_id'].'" title="User Delete"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
+                                                </div>
+                                                ';
+                                            }
+                                    
                                         }
                                     }
                                     ?>

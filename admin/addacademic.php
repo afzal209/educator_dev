@@ -1,9 +1,10 @@
-    <?php
+<?php 
         include_once 'db/connect.php';
-        if (!isset($_SESSION['user']['email'])) {
+        if(!isset($_SESSION['user']['email']))
+        {
             header('location:login.php');
         }
-
+    
         ?>
 
 
@@ -41,9 +42,6 @@
                                         }
                                     ?>
                                     <form  method="POST" action="phpScript/academic_script.php">
-                                        <div class="mt-10">
-                                            <input type="text" name="name" id="name" placeholder="Enter Academic" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Academic'" required class="single-input">
-                                        </div>
                                         <div class="form-group mt-10">
                                                 <select class="form-control" name="insert_type" id="insert_type" >
                                                     <option value="" selected>Insert Type</option>
@@ -51,6 +49,10 @@
                                                     <option value="entrytest">Entry Test</option>
                                                 </select>
                                         </div>
+                                        <div class="mt-10">
+                                            <input type="text" name="name" id="name" placeholder="Enter Academic" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Academic'" required class="single-input">
+                                        </div>
+                                        
                                         <div class="button-group-area mt-40">
                                             <input class="genric-btn success-border circle" type="submit" name="submit" value="Add">
                                         </div>                                   

@@ -33,7 +33,7 @@
                         <div class="section-top-border">
                             <div class="row">
                                 <div class="col-lg-8 col-md-8">
-                                    <h3 class="mb-30 text-center">Add Subject</h3>
+                                    <h3 class="mb-30 text-center">Add Chapter</h3>
                                     <?php 
                                         if(@$_GET['response'] != ''){
                                             echo '  <div class="alert alert-'.@$_GET['class'].'">
@@ -64,7 +64,7 @@
                                                 </select>
                                         </div>
                                         <div class="mt-10">
-                                            <input type="text" name="name" id="name" placeholder="Enter Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" required class="single-input">
+                                            <input type="text" name="name" id="name" placeholder="Enter Chapter" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" required class="single-input">
                                         </div>
                                         <input type="hidden" name="insert_by" value="<?php echo @$_SESSION['user']['username']; ?>" >             
                                         <div class="button-group-area mt-40">

@@ -61,7 +61,7 @@ include_once 'includes/header.php';
                         while ($row = mysqli_fetch_assoc($query)) {
                             echo '	<div class="col-md-6" style="margin-top:5px;">
 										<div class="blog-button">
-											<a class="hover-btn-new orange" href="chapter.php?id='.$row['id'].'&type='.$row['insert_type'].'" style="width: 91%; height: 48px;text-align:center"><span>'.$row['subject_name'].'<span></a>
+											<a class="hover-btn-new orange" href="chapter.php?id='.$row['id'].'&academy_id='.$row['academy_id'].'&type='.$row['insert_type'].'" style="width: 91%; height: 48px;text-align:center"><span>'.$row['subject_name'].'<span></a>
 										</div>
 									</div>';
                         }

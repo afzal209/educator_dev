@@ -60,7 +60,7 @@ include_once 'includes/header.php';
                         while ($row = mysqli_fetch_assoc($query)) {
                             echo '	<div class="col-md-6" style="margin-top:5px;">
 										<div class="blog-button">
-											<a class="hover-btn-new orange" href="topiclist.php?id='.$row['id'].'&type='.$row['insert_type'].'" style="width: 91%; height: 48px;text-align:center"><span>'.$row['chapter_name'].'<span></a>
+											<a class="hover-btn-new orange" href="topiclist.php?id='.$row['id'].'&academy_id='.$row['academy_id'].'&subject_id='.$row['subject_id'].'&type='.$row['insert_type'].'" style="width: 91%; height: 48px;text-align:center"><span>'.$row['chapter_name'].'<span></a>
 										</div>
 									</div>';
                         }
@@ -80,11 +80,12 @@ include_once 'includes/header.php';
 						<div class="row">
                         <?php
                         $id = $_GET['id'];
-                        $query = mysqli_query($con, 'SELECT academic.insert_type , subject.* FROM subject INNER JOIN academic ON academic.id = subject.academy_id WHERE subject.academy_id = "'.$id.'"');
+						$academy_id = $_GET['academy_id'];
+                        $query = mysqli_query($con, 'SELECT academic.insert_type , subject.* FROM subject INNER JOIN academic ON academic.id = subject.academy_id WHERE subject.academy_id = "'.$academy_id.'"');
                         while ($row = mysqli_fetch_assoc($query)) {
                             echo '	<div class="col-md-6" style="margin-top:5px;">
 										<div class="blog-button">
-											<a class="hover-btn-new orange" href="chapter.php?id='.$row['id'].'&type='.$row['insert_type'].'" style="width: 91%; height: 48px;text-align:center"><span>'.$row['subject_name'].'<span></a>
+											<a class="hover-btn-new orange" href="chapter.php?id='.$row['id'].'&academy_id='.$row['academy_id'].'&type='.$row['insert_type'].'" style="width: 91%; height: 48px;text-align:center"><span>'.$row['subject_name'].'<span></a>
 										</div>
 									</div>';
                         }

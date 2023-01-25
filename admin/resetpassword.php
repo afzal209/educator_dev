@@ -4,15 +4,30 @@
         
     $email=$_GET['email'];
     $token=$_GET['token'];
-    $select=mysqli_query($con,"select id from user where email='$email' and token='$token'");
-    if(mysqli_num_rows($select) > 0){
-        include_once 'includeFile/header.php'; 
-        ch_title("Reset Password");
-        include_once 'includeFile/navbar.php';
-        include 'phpScript/resetpassword_script.php';
-?>
-
-            <section class="banner-area relative" id="home">	
+    $curDate = date("Y-m-d H:i:s");
+    // echo '<pre>'.print_r($email.','.$token).'</pre>';
+    // die();
+    $select=mysqli_query($con,"SELECT * FROM password_reset_temp WHERE email='".$email."' AND token='".$token."'");
+    $count = mysqli_num_rows($select);
+    // echo '<pre>'.print_r($count,true).'</pre>';
+    // die();
+    if($count == ""){
+        header('location: forgetpassword.php?response=error&class=danger&message=Invalid Link');
+        // echo '<pre>'.print_r($select).'</pre>';
+        
+            }
+            else {
+                $row = mysqli_fetch_assoc($select);
+                $expDate = $row['expDate'];
+    // echo '<pre>'.print_r($expDate,true).'</pre>';
+// die();
+                if ($expDate >= $curDate){
+                include_once 'includeFile/header.php'; 
+                ch_title("Reset Password");
+                include_once 'includeFile/navbar.php';
+                // include 'phpScript/resetpassword_script.php';
+                ?>
+                <section class="banner-area relative" id="home">	
 				<div class="overlay overlay-bg"></div>
 				<div class="container">				
 					<div class="row d-flex align-items-center justify-content-center">
@@ -32,7 +47,7 @@
                             <div class="col-lg-8 col-md-8">
                                 <h3 class="mb-30 text-center">Reset Password Form</h3>
                                 
-									<form class="contactform" method="post">
+									<form class="contactform" method="POST" action="phpScript/resetpassword_script.php">
                                     <?php
 									if(@$_GET['response'] != ''){
                                         echo '  <div class="alert alert-'.@$_GET['class'].'">
@@ -92,12 +107,14 @@
                     </div>
                 </div>
             </div>  
-<?php
-    include_once 'includeFile/footer.php'; 
-    }
-    else {
-        header('location: forgetpassword.php?response=error&class=danger&message=Link expired');
-    } 
+                <?php
+            include_once 'includeFile/footer.php'; 
+                }
+                else{
+                    header('location: forgetpassword.php?response=error&class=danger&message=Link Expired');
+                }
+            } 
+
         }
         else {
         header("location: login.php");
